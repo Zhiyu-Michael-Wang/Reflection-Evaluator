@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>
         {% block title %}{% endblock %}
     </title>
@@ -19,7 +21,7 @@
         .wrapper {
             margin-top: 10px;
             margin-bottom: 10px;
-            
+
             /* background-color: rgb(213, 255, 241); */
             padding: 10px;
             border-radius: 10px;
@@ -34,32 +36,27 @@
             text-align: center;
         }
 
-        
+
 
         footer {
             max-width: 750px;
             bottom: 0px;
             position: absolute;
-            
+
         }
 
-        footer > p {
-            font-size: 11px;
-            color: rgb(75, 75, 75);
-            margin-bottom: 1px;
-            
-        }
 
-        
+
+
 
         .examples {
             font-size: 11px;
             color: rgb(75, 75, 75);
             margin-top: -10px;
             font-style: oblique;
-            
+
         }
-        
+
 
         .icon {
             height: 150px;
@@ -76,9 +73,9 @@
             padding-left: 5px;
             padding-right: 5px;
         }
-        
-        
-       
+
+
+
 
         @media only screen and (min-width: 1023px) {
             .wrapper {
@@ -93,11 +90,18 @@
             }
 
             .example_btn {
-            margin-top: -35px;
-            font-size: 11px;
-            color: rgb(75, 75, 75);
-            text-decoration: underline;
-        }
+                margin-top: -35px;
+                font-size: 11px;
+                color: rgb(75, 75, 75);
+                text-decoration: underline;
+            }
+
+            footer>p {
+                font-size: 11px;
+                color: rgb(75, 75, 75);
+                margin-bottom: 1px;
+
+            }
         }
 
         @media only screen and (max-width: 1022px) {
@@ -113,16 +117,22 @@
             }
 
             .example_btn {
-            margin-top: -25px;
-            font-size: 11px;
-            color: rgb(75, 75, 75);
-            text-decoration: underline;
-        }
-        }
+                margin-top: -25px;
+                font-size: 11px;
+                color: rgb(75, 75, 75);
+                text-decoration: underline;
 
-       
+            }
+
+            footer>p {
+                font-size: 8px;
+                color: rgb(75, 75, 75);
+                margin-bottom: 1px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
@@ -137,15 +147,20 @@
         <footer>
             {% block footer %}
             {% endblock %}
-                
-            
-        </footer>   
+
+
+        </footer>
     </div>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
