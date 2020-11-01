@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Evaluation{% endblock %}
+{% block content %}
+<form action="#" method="POST" style="margin-bottom: -10px;">
+    <!-- <textarea name="information" type="text" class="form-control" placeholder="{{ lastInput }}" aria-describedby="basic-addon2"></textarea>
+    <button type="submit" class="btn btn-primary">Submit</button> -->
+    <div class="input-group mb-3">
+        <input name="information" type="text" class="form-control" placeholder="{{ lastInput }}" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Evaluate</button>
+        </div>
+    </div>
+</form>
+
+<a class="btn example_btn" value="Examples" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Examples
+</a>
+  
+<div class="collapse" id="collapseExample" style="margin-bottom: 5px;">
+    <div class="card card-body">        
+        <li class="examples">City leadership in Freetown, Sierra Leone Flag of Sierra Leone , provides emergency food packages and supports communities to grow their own vegetables.  (Twitter @WHO)</p>
+        <li class="examples">I was thrilled to be back in my home state of FLORIDA! 5 days from now, we are going to win FLORIDA, and we are going to WIN 4 more years in the White House. Get out and VOTE! MAKE AMERICA GREAT AGAIN!! (Twitter @realDonaldTrump)</p>
+        <li class="examples">Joe Biden is a corrupt politician. He wants to send YOUR jobs to China, while his family rakes in millions from the Chinese Communist Party. (Twitter @realDonaldTrump)</p>
+        <p style="margin-bottom: -20px; text-align: right;">Copy any of them into the search box and see what will happen.</p>
+    </div>
+</div>
+
+<div class="estimation">
+    <p>{{ estimation }}</p>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+
+<p> 
+**This tool is not absolutely accurate and does not indicate whether the information evaluated is correct or not.
+</p>
+
+
+
+{% endblock %}
